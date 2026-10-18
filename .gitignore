@@ -1,0 +1,118 @@
+# ============================================================
+# Beaver Framework — .gitignore
+# ============================================================
+
+# ─── Ambiente e segredos ───
+.env
+.env.*
+!.env.example
+
+# ─── Base de dados (SQLite) ───
+*.sqlite
+*.sqlite3
+*.db
+/database/*.sqlite
+/database/*.db
+!/database/migrations/
+!/database/seeds/
+
+# ─── Logs e cache ───
+*.log
+storage/logs/*
+storage/cache/*
+storage/framework/*
+storage/sessions/*
+!storage/logs/.gitkeep
+!storage/cache/.gitkeep
+!storage/framework/.gitkeep
+!storage/sessions/.gitkeep
+.phpunit.result.cache
+.phpunit.cache/
+
+# ─── Dependências ───
+/vendor/
+/node_modules/
+
+# ─── Builds e artefactos (instalador) ───
+/build/
+/dist/
+*.spec
+/public/build/
+/public/hot
+/public/storage
+
+# ─── Backups e temporários ───
+*.bak
+*.bak.*
+*.bak-*
+*.backup
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── Uploads e storage ───
+storage/app/*
+storage/public/*
+storage/uploads/*
+!storage/app/.gitkeep
+!storage/public/.gitkeep
+!storage/uploads/.gitkeep
+
+# ─── IDE / Editores ───
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+
+# ─── Sistema operativo ───
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ─── Testes e coverage ───
+/coverage/
+*.coverage
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# ─── SDK (se for publicado separadamente) ───
+# Descomenta se o SDK for um pacote independente
+# /sdk/vendor/
+# /sdk/node_modules/
+# /sdk/build/
+# /sdk/dist/
+
+# ─── Instalador Python (build) ───
+build/beaver-installer/
+dist/beaver-installer/
+*.pyc
+__pycache__/
+*.pyo
+
+# ─── Plugins (se forem gerados) ───
+/plugins/*/vendor/
+/plugins/*/node_modules/
+/plugins/*/build/
+/plugins/*/dist/
+
+# ─── Frankei (relatórios gerados) ───
+storage/frankei/*
+!storage/frankei/.gitkeep
+*.frankei-report.html
+
+# ─── Docker / containers ───
+docker-compose.override.yml
+.docker/
+*.pid
+

@@ -1,0 +1,13 @@
+{
+    "name": "Human Check",
+    "slug": "human-check",
+    "version": "0.1.0",
+    "author": "Beaver",
+    "description": "Soma aritmética — verificação humana mínima",
+    "namespace": "Beaver\\Plugins\\HumanCheck",
+    "main": "src/HumanCheckPlugin.php",
+    "beaver_version": ">=0.1.0",
+    "requires": { "php": ">=8.1" },
+    "routes": "routes/web.php",
+    "enabled": true
+}
